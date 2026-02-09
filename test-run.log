@@ -1,0 +1,230 @@
+﻿
+Running 165 tests using 2 workers
+
+[1A[2K[1/165] [chromium] ΓÇ║ tests\specs\01-auth-positive.spec.ts:10:7 ΓÇ║ Authentication - Positive Scenarios ΓÇ║ TC-001: User should be able to register successfully with valid data
+[1A[2K[2/165] [chromium] ΓÇ║ tests\specs\01-auth-positive.spec.ts:58:7 ΓÇ║ Authentication - Positive Scenarios ΓÇ║ TC-002: User should be able to login with valid credentials
+[1A[2K[3/165] [chromium] ΓÇ║ tests\specs\01-auth-positive.spec.ts:103:7 ΓÇ║ Authentication - Positive Scenarios ΓÇ║ TC-003: User should be able to logout successfully
+[1A[2K  1) [chromium] ΓÇ║ tests\specs\01-auth-positive.spec.ts:58:7 ΓÇ║ Authentication - Positive Scenarios ΓÇ║ TC-002: User should be able to login with valid credentials 
+
+    Error: page.evaluate: Execution context was destroyed, most likely because of a navigation
+
+       at pages\BasePage.ts:53
+
+      51 |     } catch (err) {
+      52 |       // fallback to JS click if normal click fails (e.g., overlay or disabled state)
+    > 53 |       await this.page.evaluate((s) => {
+         |                       ^
+      54 |         const e = document.querySelector(s as string) as HTMLElement | null;
+      55 |         if (e) e.click();
+      56 |       }, selector);
+        at SignupPage.clickElement (E:\Playwright\tests\pages\BasePage.ts:53:23)
+        at SignupPage.clickCreateAccountButton (E:\Playwright\tests\pages\SignupPage.ts:133:5)
+        at SignupPage.completeSignup (E:\Playwright\tests\pages\SignupPage.ts:182:5)
+        at E:\Playwright\tests\specs\01-auth-positive.spec.ts:77:5
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-01-auth-positive-Aut-074e4-ogin-with-valid-credentials-chromium\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    attachment #2: video (video/webm) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-01-auth-positive-Aut-074e4-ogin-with-valid-credentials-chromium\video.webm
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\specs-01-auth-positive-Aut-074e4-ogin-with-valid-credentials-chromium\error-context.md
+
+
+[1A[2K[4/165] [chromium] ΓÇ║ tests\specs\01-auth-positive.spec.ts:159:7 ΓÇ║ Authentication - Positive Scenarios ΓÇ║ TC-004: User information should be persisted after registration
+[1A[2K[5/165] [chromium] ΓÇ║ tests\specs\01-auth-positive.spec.ts:196:7 ΓÇ║ Authentication - Positive Scenarios ΓÇ║ TC-005: New user registration flow should work on different browsers
+[1A[2K[6/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:20:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-101: Login should fail with non-existent email
+[1A[2K  2) [chromium] ΓÇ║ tests\specs\01-auth-positive.spec.ts:103:7 ΓÇ║ Authentication - Positive Scenarios ΓÇ║ TC-003: User should be able to logout successfully 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: page.waitForLoadState: Test timeout of 60000ms exceeded.
+
+      142 |     // Now we should be logged in, navigate to home to find logout button
+      143 |     await page.goto('/');
+    > 144 |     await page.waitForLoadState('networkidle');
+          |                ^
+      145 |
+      146 |     // Verify user is logged in by checking for logout link
+      147 |     const logoutLink = page.locator('a[href="/logout"]');
+        at E:\Playwright\tests\specs\01-auth-positive.spec.ts:144:16
+
+    attachment #1: video (video/webm) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-01-auth-positive-Aut-b91da-able-to-logout-successfully-chromium\video.webm
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+
+[1A[2K[7/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:43:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-102: Login should fail with wrong password
+[1A[2K  3) [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:20:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-101: Login should fail with non-existent email 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.textContent: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.login-form .error')[22m
+
+
+       at pages\BasePage.ts:64
+
+      62 |    */
+      63 |   async getElementText(selector: string): Promise<string | null> {
+    > 64 |     return await this.page.locator(selector).textContent();
+         |                                              ^
+      65 |   }
+      66 |
+      67 |   /**
+        at LoginPage.getElementText (E:\Playwright\tests\pages\BasePage.ts:64:46)
+        at LoginPage.getLoginErrorMessage (E:\Playwright\tests\pages\LoginPage.ts:67:23)
+        at E:\Playwright\tests\specs\02-auth-negative.spec.ts:35:42
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    attachment #2: video (video/webm) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\video.webm
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\error-context.md
+
+
+[1A[2K[8/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:66:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-103: Login should fail with empty email field
+[1A[2K[9/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:84:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-104: Login should fail with empty password field
+[1A[2K[10/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:102:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-105: Login should fail with both email and password empty
+[1A[2K[11/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:116:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-106: Signup should fail when email already exists
+[1A[2K  4) [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:43:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-102: Login should fail with wrong password 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.textContent: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.login-form .error')[22m
+
+
+       at pages\BasePage.ts:64
+
+      62 |    */
+      63 |   async getElementText(selector: string): Promise<string | null> {
+    > 64 |     return await this.page.locator(selector).textContent();
+         |                                              ^
+      65 |   }
+      66 |
+      67 |   /**
+        at LoginPage.getElementText (E:\Playwright\tests\pages\BasePage.ts:64:46)
+        at LoginPage.getLoginErrorMessage (E:\Playwright\tests\pages\LoginPage.ts:67:23)
+        at E:\Playwright\tests\specs\02-auth-negative.spec.ts:58:42
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    attachment #2: video (video/webm) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\video.webm
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\error-context.md
+
+
+[1A[2K[12/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:143:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-107: Signup should fail with empty name field
+[1A[2K[13/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:162:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-108: Signup should fail with empty email field
+[1A[2K[14/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:181:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-109: Signup should fail with invalid email format
+[1A[2K[15/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:206:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-110: Session should not persist after logout
+[1A[2K[16/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:239:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-111: Cross-site request forgery protection should exist
+[1A[2K[17/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:261:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-112: SQL Injection attempt should be prevented
+[1A[2K  5) [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:206:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-110: Session should not persist after logout 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"/account"[39m
+    Received string:    [31m"https://automationexercise.com/login"[39m
+
+      221 |     // Verify logged in by checking URL
+      222 |     const urlAfterLogin = await page.url();
+    > 223 |     expect(urlAfterLogin).toContain('/account');
+          |                           ^
+      224 |     
+      225 |     // Logout
+      226 |     await page.click('a[href="/logout"]');
+        at E:\Playwright\tests\specs\02-auth-negative.spec.ts:223:27
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    attachment #2: video (video/webm) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\video.webm
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\error-context.md
+
+
+[1A[2K[18/165] [chromium] ΓÇ║ tests\specs\03-account-management.spec.ts:18:7 ΓÇ║ Account Management ΓÇ║ TC-201: User should be able to view account details after login
+[1A[2K[19/165] [chromium] ΓÇ║ tests\specs\02-auth-negative.spec.ts:284:7 ΓÇ║ Authentication - Negative Scenarios ΓÇ║ TC-113: Password should not be visible in plain text
+[1A[2K[20/165] [chromium] ΓÇ║ tests\specs\03-account-management.spec.ts:68:7 ΓÇ║ Account Management ΓÇ║ TC-202: User should be able to delete account
+[1A[2K  6) [chromium] ΓÇ║ tests\specs\03-account-management.spec.ts:18:7 ΓÇ║ Account Management ΓÇ║ TC-201: User should be able to view account details after login 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+      63 |     // Verify we're on account page
+      64 |     const currentUrl = await page.url();
+    > 65 |     expect(currentUrl.includes('/account') || currentUrl.includes('/dashboard')).toBeTruthy();
+         |                                                                                  ^
+      66 |   });
+      67 |
+      68 |   test('TC-202: User should be able to delete account', async ({
+        at E:\Playwright\tests\specs\03-account-management.spec.ts:65:82
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    attachment #2: video (video/webm) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\video.webm
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\error-context.md
+
+
+[1A[2K[21/165] [chromium] ΓÇ║ tests\specs\03-account-management.spec.ts:124:7 ΓÇ║ Account Management ΓÇ║ TC-203: User should not be able to access account page without login
+[1A[2K[22/165] [chromium] ΓÇ║ tests\specs\03-account-management.spec.ts:141:7 ΓÇ║ Account Management ΓÇ║ TC-204: User should maintain session across page navigation
+[1A[2K  7) [chromium] ΓÇ║ tests\specs\03-account-management.spec.ts:68:7 ΓÇ║ Account Management ΓÇ║ TC-202: User should be able to delete account 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      104 |     // Click continue button
+      105 |     await page.click('button[data-qa="continue-button"]').catch(() => {});
+    > 106 |     await page.waitForTimeout(1000);
+          |                ^
+      107 |     
+      108 |     // Try to access delete account link
+      109 |     const deleteLink = await page.locator('a[href="/delete_account"]').isVisible().catch(() => false);
+        at E:\Playwright\tests\specs\03-account-management.spec.ts:106:16
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\specs-03-account-managemen-adefd-d-be-able-to-delete-account-chromium\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\specs-03-account-managemen-adefd-d-be-able-to-delete-account-chromium\error-context.md
+
+
+[1A[2K[23/165] [chromium] ΓÇ║ tests\specs\03-account-management.spec.ts:166:7 ΓÇ║ Account Management ΓÇ║ TC-205: User profile information should be retrievable
+[1A[2K  8) [chromium] ΓÇ║ tests\specs\03-account-management.spec.ts:166:7 ΓÇ║ Account Management ΓÇ║ TC-205: User profile information should be retrievable 
+
+    Test was interrupted.
+
+    Error: browserContext.close: Test ended.
+    Browser logs:
+
+    <launching> C:\Users\hasee\AppData\Local\ms-playwright\chromium_headless_shell-1194\chrome-win\headless_shell.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\hasee\AppData\Local\Temp\playwright_chromiumdev_profile-n5iOF2 --remote-debugging-pipe --no-startup-window
+    <launched> pid=1900
+    [pid=1900][err] [0209/180349.157:INFO:CONSOLE:0] "Mixed Content: The page at 'https://automationexercise.com/' was loaded over HTTPS, but requested an insecure stylesheet 'http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100'. This request has been blocked; the content must be served over HTTPS.", source: https://automationexercise.com/ (0)
+    [pid=1900][err] [0209/180349.157:INFO:CONSOLE:0] "Mixed Content: The page at 'https://automationexercise.com/' was loaded over HTTPS, but requested an insecure stylesheet 'http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700'. This request has been blocked; the content must be served over HTTPS.", source: https://automationexercise.com/ (0)
+    [pid=1900][err] [0209/180349.158:INFO:CONSOLE:0] "Mixed Content: The page at 'https://automationexercise.com/' was loaded over HTTPS, but requested an insecure stylesheet 'http://fonts.googleapis.com/css?family=Abel'. This request has been blocked; the content must be served over HTTPS.", source: https://automationexercise.com/ (0)
+
+

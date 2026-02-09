@@ -1,0 +1,380 @@
+<testsuites id="" name="" tests="33" failures="8" skipped="0" errors="0" time="286.02724199999994">
+<testsuite name="specs\01-auth-positive.spec.ts" timestamp="2026-02-09T13:46:51.594Z" hostname="chromium" tests="5" failures="0" skipped="0" time="77.385" errors="0">
+<testcase name="Authentication - Positive Scenarios › TC-001: User should be able to register successfully with valid data" classname="specs\01-auth-positive.spec.ts" time="14.801">
+</testcase>
+<testcase name="Authentication - Positive Scenarios › TC-002: User should be able to login with valid credentials" classname="specs\01-auth-positive.spec.ts" time="23.625">
+</testcase>
+<testcase name="Authentication - Positive Scenarios › TC-003: User should be able to logout successfully" classname="specs\01-auth-positive.spec.ts" time="26.814">
+</testcase>
+<testcase name="Authentication - Positive Scenarios › TC-004: User information should be persisted after registration" classname="specs\01-auth-positive.spec.ts" time="7.059">
+</testcase>
+<testcase name="Authentication - Positive Scenarios › TC-005: New user registration flow should work on different browsers" classname="specs\01-auth-positive.spec.ts" time="5.086">
+</testcase>
+</testsuite>
+<testsuite name="specs\02-auth-negative.spec.ts" timestamp="2026-02-09T13:46:51.594Z" hostname="chromium" tests="13" failures="3" skipped="0" time="255.941" errors="0">
+<testcase name="Authentication - Negative Scenarios › TC-101: Login should fail with non-existent email" classname="specs\02-auth-negative.spec.ts" time="71.244">
+<failure message="02-auth-negative.spec.ts:20:7 TC-101: Login should fail with non-existent email" type="FAILURE">
+<![CDATA[  [chromium] › specs\02-auth-negative.spec.ts:20:7 › Authentication - Negative Scenarios › TC-101: Login should fail with non-existent email 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.textContent: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for locator('.login-form .error')
+
+
+       at pages\BasePage.ts:64
+
+      62 |    */
+      63 |   async getElementText(selector: string): Promise<string | null> {
+    > 64 |     return await this.page.locator(selector).textContent();
+         |                                              ^
+      65 |   }
+      66 |
+      67 |   /**
+        at LoginPage.getElementText (E:\Playwright\tests\pages\BasePage.ts:64:46)
+        at LoginPage.getLoginErrorMessage (E:\Playwright\tests\pages\LoginPage.ts:67:23)
+        at E:\Playwright\tests\specs\02-auth-negative.spec.ts:35:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-e4cc6-ail-with-non-existent-email-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-102: Login should fail with wrong password" classname="specs\02-auth-negative.spec.ts" time="74.949">
+<failure message="02-auth-negative.spec.ts:43:7 TC-102: Login should fail with wrong password" type="FAILURE">
+<![CDATA[  [chromium] › specs\02-auth-negative.spec.ts:43:7 › Authentication - Negative Scenarios › TC-102: Login should fail with wrong password 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.textContent: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for locator('.login-form .error')
+
+
+       at pages\BasePage.ts:64
+
+      62 |    */
+      63 |   async getElementText(selector: string): Promise<string | null> {
+    > 64 |     return await this.page.locator(selector).textContent();
+         |                                              ^
+      65 |   }
+      66 |
+      67 |   /**
+        at LoginPage.getElementText (E:\Playwright\tests\pages\BasePage.ts:64:46)
+        at LoginPage.getLoginErrorMessage (E:\Playwright\tests\pages\LoginPage.ts:67:23)
+        at E:\Playwright\tests\specs\02-auth-negative.spec.ts:58:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-2ab1f-ld-fail-with-wrong-password-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-103: Login should fail with empty email field" classname="specs\02-auth-negative.spec.ts" time="10.2">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-104: Login should fail with empty password field" classname="specs\02-auth-negative.spec.ts" time="11.181">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-105: Login should fail with both email and password empty" classname="specs\02-auth-negative.spec.ts" time="11.33">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-106: Signup should fail when email already exists" classname="specs\02-auth-negative.spec.ts" time="19.029">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-107: Signup should fail with empty name field" classname="specs\02-auth-negative.spec.ts" time="8.655">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-108: Signup should fail with empty email field" classname="specs\02-auth-negative.spec.ts" time="6.752">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-109: Signup should fail with invalid email format" classname="specs\02-auth-negative.spec.ts" time="11.457">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-110: Session should not persist after logout" classname="specs\02-auth-negative.spec.ts" time="9.27">
+<failure message="02-auth-negative.spec.ts:206:7 TC-110: Session should not persist after logout" type="FAILURE">
+<![CDATA[  [chromium] › specs\02-auth-negative.spec.ts:206:7 › Authentication - Negative Scenarios › TC-110: Session should not persist after logout 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "/account"
+    Received string:    "https://automationexercise.com/login"
+
+      221 |     // Verify logged in by checking URL
+      222 |     const urlAfterLogin = await page.url();
+    > 223 |     expect(urlAfterLogin).toContain('/account');
+          |                           ^
+      224 |     
+      225 |     // Logout
+      226 |     await page.click('a[href="/logout"]');
+        at E:\Playwright\tests\specs\02-auth-negative.spec.ts:223:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\specs-02-auth-negative-Aut-7de54-ld-not-persist-after-logout-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-111: Cross-site request forgery protection should exist" classname="specs\02-auth-negative.spec.ts" time="5.616">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-112: SQL Injection attempt should be prevented" classname="specs\02-auth-negative.spec.ts" time="9.921">
+</testcase>
+<testcase name="Authentication - Negative Scenarios › TC-113: Password should not be visible in plain text" classname="specs\02-auth-negative.spec.ts" time="6.337">
+</testcase>
+</testsuite>
+<testsuite name="specs\03-account-management.spec.ts" timestamp="2026-02-09T13:46:51.594Z" hostname="chromium" tests="5" failures="4" skipped="0" time="112.496" errors="0">
+<testcase name="Account Management › TC-201: User should be able to view account details after login" classname="specs\03-account-management.spec.ts" time="16.635">
+<failure message="03-account-management.spec.ts:18:7 TC-201: User should be able to view account details after login" type="FAILURE">
+<![CDATA[  [chromium] › specs\03-account-management.spec.ts:18:7 › Account Management › TC-201: User should be able to view account details after login 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      63 |     // Verify we're on account page
+      64 |     const currentUrl = await page.url();
+    > 65 |     expect(currentUrl.includes('/account') || currentUrl.includes('/dashboard')).toBeTruthy();
+         |                                                                                  ^
+      66 |   });
+      67 |
+      68 |   test('TC-202: User should be able to delete account', async ({
+        at E:\Playwright\tests\specs\03-account-management.spec.ts:65:82
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\specs-03-account-managemen-3ac62-account-details-after-login-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Account Management › TC-202: User should be able to delete account" classname="specs\03-account-management.spec.ts" time="60.788">
+<failure message="03-account-management.spec.ts:68:7 TC-202: User should be able to delete account" type="FAILURE">
+<![CDATA[  [chromium] › specs\03-account-management.spec.ts:68:7 › Account Management › TC-202: User should be able to delete account 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      104 |     // Click continue button
+      105 |     await page.click('button[data-qa="continue-button"]').catch(() => {});
+    > 106 |     await page.waitForTimeout(1000);
+          |                ^
+      107 |     
+      108 |     // Try to access delete account link
+      109 |     const deleteLink = await page.locator('a[href="/delete_account"]').isVisible().catch(() => false);
+        at E:\Playwright\tests\specs\03-account-management.spec.ts:106:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\specs-03-account-managemen-adefd-d-be-able-to-delete-account-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\specs-03-account-managemen-adefd-d-be-able-to-delete-account-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\specs-03-account-managemen-adefd-d-be-able-to-delete-account-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\specs-03-account-managemen-adefd-d-be-able-to-delete-account-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\specs-03-account-managemen-adefd-d-be-able-to-delete-account-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\specs-03-account-managemen-adefd-d-be-able-to-delete-account-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Account Management › TC-203: User should not be able to access account page without login" classname="specs\03-account-management.spec.ts" time="12.319">
+</testcase>
+<testcase name="Account Management › TC-204: User should maintain session across page navigation" classname="specs\03-account-management.spec.ts" time="13.936">
+<failure message="03-account-management.spec.ts:141:7 TC-204: User should maintain session across page navigation" type="FAILURE">
+<![CDATA[  [chromium] › specs\03-account-management.spec.ts:141:7 › Account Management › TC-204: User should maintain session across page navigation 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      156 |     await page.goto('/');
+      157 |     let hasLogoutLink = await page.locator('a[href="/logout"]').isVisible().catch(() => false);
+    > 158 |     expect(hasLogoutLink).toBeTruthy();
+          |                           ^
+      159 |     
+      160 |     // Navigate to products
+      161 |     await page.goto('/products');
+        at E:\Playwright\tests\specs\03-account-management.spec.ts:158:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\specs-03-account-managemen-8d652-sion-across-page-navigation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\specs-03-account-managemen-8d652-sion-across-page-navigation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\specs-03-account-managemen-8d652-sion-across-page-navigation-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\specs-03-account-managemen-8d652-sion-across-page-navigation-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\specs-03-account-managemen-8d652-sion-across-page-navigation-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\specs-03-account-managemen-8d652-sion-across-page-navigation-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Account Management › TC-205: User profile information should be retrievable" classname="specs\03-account-management.spec.ts" time="8.818">
+<failure message="03-account-management.spec.ts:166:7 TC-205: User profile information should be retrievable" type="FAILURE">
+<![CDATA[  [chromium] › specs\03-account-management.spec.ts:166:7 › Account Management › TC-205: User profile information should be retrievable 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      188 |     );
+      189 |     
+    > 190 |     expect(hasUserInfo || await page.url().includes('account')).toBeTruthy();
+          |                                                                 ^
+      191 |   });
+      192 | });
+      193 |
+        at E:\Playwright\tests\specs\03-account-management.spec.ts:190:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\specs-03-account-managemen-7019a-ation-should-be-retrievable-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\specs-03-account-managemen-7019a-ation-should-be-retrievable-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\specs-03-account-managemen-7019a-ation-should-be-retrievable-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\specs-03-account-managemen-7019a-ation-should-be-retrievable-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\specs-03-account-managemen-7019a-ation-should-be-retrievable-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\specs-03-account-managemen-7019a-ation-should-be-retrievable-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="specs\04-mobile-responsive.spec.ts" timestamp="2026-02-09T13:46:51.594Z" hostname="chromium" tests="10" failures="1" skipped="0" time="48.679" errors="0">
+<testcase name="Mobile Testing - Signup &amp; Login › TC-301: Signup form should be responsive on mobile" classname="specs\04-mobile-responsive.spec.ts" time="5.151">
+</testcase>
+<testcase name="Mobile Testing - Signup &amp; Login › TC-302: Login form should be responsive on mobile" classname="specs\04-mobile-responsive.spec.ts" time="3.853">
+</testcase>
+<testcase name="Mobile Testing - Signup &amp; Login › TC-303: Navigation should work on mobile devices" classname="specs\04-mobile-responsive.spec.ts" time="7.308">
+</testcase>
+<testcase name="Mobile Testing - Signup &amp; Login › TC-304: Text inputs should have proper mobile keyboard" classname="specs\04-mobile-responsive.spec.ts" time="3.676">
+</testcase>
+<testcase name="Mobile Testing - Signup &amp; Login › TC-305: Buttons should be easily tappable on mobile (minimum 44x44px)" classname="specs\04-mobile-responsive.spec.ts" time="4.168">
+</testcase>
+<testcase name="Mobile Testing - Signup &amp; Login › TC-306: Mobile checkout flow should prevent accidental scrolling" classname="specs\04-mobile-responsive.spec.ts" time="3.963">
+<failure message="04-mobile-responsive.spec.ts:135:7 TC-306: Mobile checkout flow should prevent accidental scrolling" type="FAILURE">
+<![CDATA[  [chromium] › specs\04-mobile-responsive.spec.ts:135:7 › Mobile Testing - Signup & Login › TC-306: Mobile checkout flow should prevent accidental scrolling 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 600
+    Received:    1280
+
+      146 |     
+      147 |     // Verify page is responsive
+    > 148 |     expect(viewport?.width).toBeLessThanOrEqual(600);
+          |                             ^
+      149 |     
+      150 |     // Try to fill form
+      151 |     const emailInput = page.locator(loginPage.loginEmailInput);
+        at E:\Playwright\tests\specs\04-mobile-responsive.spec.ts:148:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\specs-04-mobile-responsive-f155f-revent-accidental-scrolling-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\specs-04-mobile-responsive-f155f-revent-accidental-scrolling-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\specs-04-mobile-responsive-f155f-revent-accidental-scrolling-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\specs-04-mobile-responsive-f155f-revent-accidental-scrolling-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\specs-04-mobile-responsive-f155f-revent-accidental-scrolling-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\specs-04-mobile-responsive-f155f-revent-accidental-scrolling-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mobile Testing - Signup &amp; Login › TC-307: Verify page layout on different mobile screen sizes" classname="specs\04-mobile-responsive.spec.ts" time="3.824">
+</testcase>
+<testcase name="Desktop Testing - Cross Browser › TC-401: Verify signup works on all supported browsers" classname="specs\04-mobile-responsive.spec.ts" time="4.295">
+</testcase>
+<testcase name="Desktop Testing - Cross Browser › TC-402: CSS rendering should be consistent across browsers" classname="specs\04-mobile-responsive.spec.ts" time="4.739">
+</testcase>
+<testcase name="Desktop Testing - Cross Browser › TC-403: JavaScript functionality should work correctly on all browsers" classname="specs\04-mobile-responsive.spec.ts" time="7.702">
+</testcase>
+</testsuite>
+</testsuites>
