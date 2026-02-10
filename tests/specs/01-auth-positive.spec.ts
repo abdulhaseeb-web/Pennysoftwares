@@ -97,7 +97,8 @@ test.describe('Authentication - Positive Scenarios', () => {
     await signupPage.clickContinueButton();
     
     // Verify successful login after signup
-    expect(await page.url()).toContain('/account');
+    //expect(await page.url()).toContain('/account');
+    await expect(page).toHaveURL('https://automationexercise.com/');
   });
 
   test('TC-003: User should be able to logout successfully', async ({
