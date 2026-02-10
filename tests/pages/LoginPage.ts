@@ -9,7 +9,7 @@ export class LoginPage extends BasePage {
   readonly loginEmailInput = 'input[data-qa="login-email"]';
   readonly loginPasswordInput = 'input[data-qa="login-password"]';
   readonly loginButton = 'button[data-qa="login-button"]';
-  readonly loginErrorMessage = '.login-form .error';
+  readonly loginErrorMessage = 'form[action="/login"] p';
   readonly loginForm = '.login-form';
 
   // Signup section selectors
