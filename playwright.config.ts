@@ -1,16 +1,17 @@
 import { defineConfig, devices } from '@playwright/test';
+import process from 'process';
 
 /**
  * Playwright Configuration for Automation Exercise E2E Tests
  * Supports multiple browsers, devices, and comprehensive reporting
  */
 export default defineConfig({
-  testDir: './tests',
+  testDir: './tests/specs',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  
+
   reporter: [
     ['html'],
     ['junit', { outputFile: 'junit.xml' }],
@@ -57,7 +58,7 @@ export default defineConfig({
 
   /* Global timeout */
   timeout: 60000,
-  
+
   /* Global test timeout */
   expect: {
     timeout: 10000,

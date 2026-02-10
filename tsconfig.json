@@ -16,7 +16,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "types": [
-      "@playwright/test"
+      "node"
     ]
   },
   "include": [
